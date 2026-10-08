@@ -1,4 +1,8 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /editor-ameei-interno-2026.html
+Disallow: /ameei-admin-7f3c9b/
 
-Sitemap: https://ameei.com.mx/sitemap.xml
+Sitemap: https://www.ameei.com.mx/sitemap.xml
+

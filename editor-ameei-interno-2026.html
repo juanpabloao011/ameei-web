@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Editor AMEEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260714-admin-final">
+  </head>
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <a class="brand-lockup" href="/">
+          <img data-admin-logo alt="AMEEI">
+          <span>
+            <strong>Editor AMEEI</strong>
+            <small>Contenido del sitio</small>
+          </span>
+        </a>
+
+        <nav class="admin-menu" data-admin-menu aria-label="Secciones del editor">
+          <button class="active" data-tab="general">General</button>
+          <button data-tab="inicio">Inicio</button>
+          <button data-tab="nosotros">Quienes somos</button>
+          <button data-tab="servicios">Servicios</button>
+          <button data-tab="sectores">Sectores</button>
+          <button data-tab="equipos">Equipos</button>
+          <button data-tab="proyectos">Proyectos</button>
+          <button data-tab="calidad">Calidad</button>
+          <button data-tab="contacto">Contacto</button>
+        </nav>
+
+        <div class="admin-note">
+          Este editor solo funciona desde el administrador protegido.
+        </div>
+      </aside>
+
+      <main class="admin-main">
+        <div class="admin-topbar">
+          <div>
+            <h1>Administracion visual</h1>
+            <p>Edita textos, imagenes, servicios, proyectos y contacto sin tocar codigo.</p>
+          </div>
+          <div class="admin-action-row">
+            <button data-save>Guardar</button>
+            <button class="soft-button" data-preview-site>Ver sitio</button>
+            <button class="soft-button" data-export>Exportar</button>
+            <button class="soft-button" data-import-trigger>Importar</button>
+            <button class="danger-button" data-reset>Restaurar</button>
+            <input data-import-file type="file" accept=".json,.js,application/json" hidden>
+          </div>
+        </div>
+
+        <div class="editor-layout">
+          <section class="editor-panel">
+            <form data-editor-form>
+              <section class="form-section active" data-section="general">
+                <h2>General</h2>
+                <div class="form-grid">
+                  <label class="field"><span>Nombre corto</span><input data-path="brand.name"></label>
+                  <label class="field"><span>Razon social</span><input data-path="brand.legalName"></label>
+                  <label class="field full"><span>Frase de marca</span><input data-path="brand.tagline"></label>
+                  <label class="field full"><span>Logo principal (URL)</span><input data-path="brand.logo"></label>
+                  <label class="field"><span>Titulo SEO</span><input data-path="seo.title"></label>
+                  <label class="field"><span>Descripcion SEO</span><input data-path="seo.description"></label>
+                </div>
+              </section>
+
+              <section class="form-section" data-section="inicio">
+                <h2>Inicio</h2>
+                <div class="form-grid">
+                  <label class="field"><span>Texto pequeno superior</span><input data-path="hero.eyebrow"></label>
+                  <label class="field"><span>Imagen principal (URL)</span><input data-path="hero.image"></label>
+                  <label class="field full"><span>Titulo principal</span><textarea data-path="hero.title"></textarea></label>
+                  <label class="field full"><span>Descripcion</span><textarea data-path="hero.description"></textarea></label>
+                  <label class="field"><span>Boton principal</span><input data-path="hero.primaryCta"></label>
+                  <label class="field"><span>Boton secundario</span><input data-path="hero.secondaryCta"></label>
+                </div>
+                <div class="field-list" data-array-editor="hero.highlights" data-type="text" data-label="Capacidad destacada"></div>
+                <div class="field-list" data-array-editor="stats" data-type="stat"></div>
+              </section>
+
+              <section class="form-section" data-section="nosotros">
+                <h2>Quienes somos</h2>
+                <div class="form-grid">
+                  <label class="field full"><span>Titulo</span><textarea data-path="about.title"></textarea></label>
+                  <label class="field full"><span>Imagen (URL)</span><input data-path="about.image"></label>
+                  <label class="field full"><span>Mision</span><textarea data-path="about.mission"></textarea></label>
+                  <label class="field full"><span>Vision</span><textarea data-path="about.vision"></textarea></label>
+                </div>
+                <div class="field-list" data-array-editor="about.paragraphs" data-type="textarea" data-label="Parrafo"></div>
+                <div class="field-list" data-array-editor="about.values" data-type="text" data-label="Valor"></div>
+              </section>
+
+              <section class="form-section" data-section="servicios">
+                <h2>Servicios</h2>
+                <div class="form-grid">
+                  <label class="field full"><span>Titulo de seccion</span><input data-path="servicesIntro.title"></label>
+                  <label class="field full"><span>Descripcion de seccion</span><textarea data-path="servicesIntro.description"></textarea></label>
+                </div>
+                <div class="field-list" data-array-editor="services" data-type="service"></div>
+              </section>
+
+              <section class="form-section" data-section="sectores">
+                <h2>Sectores y proceso</h2>
+                <div class="form-grid">
+                  <label class="field full"><span>Titulo de sectores</span><input data-path="sectorsIntro.title"></label>
+                  <label class="field full"><span>Descripcion de sectores</span><textarea data-path="sectorsIntro.description"></textarea></label>
+                  <label class="field full"><span>Titulo de confianza</span><input data-path="proof.title"></label>
+                  <label class="field full"><span>Texto de confianza</span><textarea data-path="proof.text"></textarea></label>
+                </div>
+                <div class="field-list" data-array-editor="proof.bullets" data-type="textarea" data-label="Argumento de confianza"></div>
+                <div class="field-list" data-array-editor="sectors" data-type="sector"></div>
+                <div class="field-list" data-array-editor="process" data-type="process"></div>
+              </section>
+
+              <section class="form-section" data-section="equipos">
+                <h2>Equipos de prueba</h2>
+                <div class="field-list" data-array-editor="equipment" data-type="equipment"></div>
+              </section>
+
+              <section class="form-section" data-section="proyectos">
+                <h2>Proyectos y clientes</h2>
+                <div class="field-list" data-array-editor="projects" data-type="project"></div>
+                <div class="field-list" data-array-editor="clients" data-type="client" data-label="Cliente"></div>
+              </section>
+
+              <section class="form-section" data-section="calidad">
+                <h2>Politica de calidad</h2>
+                <div class="form-grid">
+                  <label class="field full"><span>Titulo</span><input data-path="quality.title"></label>
+                  <label class="field full"><span>Texto</span><textarea data-path="quality.text"></textarea></label>
+                </div>
+                <div class="field-list" data-array-editor="quality.points" data-type="textarea" data-label="Punto"></div>
+              </section>
+
+              <section class="form-section" data-section="contacto">
+                <h2>Contacto</h2>
+                <div class="form-grid">
+                  <label class="field"><span>Responsable</span><input data-path="contact.person"></label>
+                  <label class="field"><span>Empresa</span><input data-path="contact.company"></label>
+                  <label class="field full"><span>Direccion</span><input data-path="contact.address"></label>
+                  <label class="field"><span>Telefono</span><input data-path="contact.phone"></label>
+                  <label class="field"><span>Correo</span><input data-path="contact.email"></label>
+                  <label class="field full"><span>Busqueda para mapa</span><input data-path="contact.mapQuery"></label>
+                </div>
+              </section>
+            </form>
+          </section>
+
+          <aside class="preview-panel">
+            <header>Vista previa rapida</header>
+            <div class="mini-preview" data-mini-preview></div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div class="toast" data-toast></div>
+    <script src="/assets/js/content-data.js?v=20260714-admin-final"></script>
+    <script src="/assets/js/admin.js?v=20260714-admin-final"></script>
+  </body>
+</html>
+

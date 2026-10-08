@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="Naturgy">
+  <rect width="320" height="120" rx="8" fill="#ffffff"/>
+  <circle cx="84" cy="60" r="22" fill="#f1b51c"/>
+  <path d="M67 67c31 16 58 7 78-19" fill="none" stroke="#68b8e8" stroke-width="9" stroke-linecap="round"/>
+  <text x="196" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#104a86">Naturgy</text>
+</svg>
