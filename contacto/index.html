@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Cotizar mantenimiento de subestaciones eléctricas | AMEEI</title>
+  <meta name="description" content="Solicite diagnóstico o cotización AMEEI para mantenimiento, reparación, pruebas y puesta en servicio de sistemas eléctricos de potencia.">
+  <link rel="canonical" href="https://ameei.com.mx/contacto/">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="AMEEI inicio"><span class="brand-mark">A</span><span><strong>AMEEI</strong><small>Servicios Eléctricos de Potencia</small></span></a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="/servicios/">Servicios</a>
+      <a href="/sectores/">Sectores</a>
+      <a href="/proyectos/">Experiencia</a>
+      <a class="nav-cta" href="/contacto/">Cotizar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Contacto técnico</p>
+      <h1>Solicite diagnóstico o cotización para su proyecto eléctrico.</h1>
+      <p>Comparta el tipo de instalación, ubicación, nivel de tensión, urgencia y servicio requerido para orientar la atención con mayor precisión.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form" data-quote-form>
+        <div class="form-grid">
+          <label>Nombre
+            <input name="nombre" autocomplete="name" required>
+          </label>
+          <label>Empresa
+            <input name="empresa" autocomplete="organization">
+          </label>
+          <label>Correo
+            <input name="correo" type="email" autocomplete="email" required>
+          </label>
+          <label>Teléfono
+            <input name="telefono" type="tel" autocomplete="tel">
+          </label>
+          <label>Tipo de instalación
+            <select name="instalacion">
+              <option>Subestación</option>
+              <option>Parque solar</option>
+              <option>Parque eólico</option>
+              <option>Mina</option>
+              <option>Industria</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Ubicación
+            <input name="ubicacion" autocomplete="address-level2">
+          </label>
+          <label class="full">Servicio requerido
+            <textarea name="mensaje" required placeholder="Incluya tensión, potencia, marca del equipo, urgencia, fecha tentativa y cualquier hallazgo relevante."></textarea>
+          </label>
+        </div>
+        <button class="button primary" type="submit">Preparar correo</button>
+        <p class="form-note">El botón abrirá su cliente de correo con la información capturada para enviarla a AMEEI.</p>
+      </form>
+
+      <aside class="contact-card">
+        <p class="eyebrow">Datos de contacto</p>
+        <h2>AMEEI Servicios Eléctricos de Potencia</h2>
+        <p>Atención para mantenimiento, reparación, pruebas y puesta en servicio de equipo eléctrico industrial en México.</p>
+        <ul class="check-list">
+          <li>Describa si se trata de parque solar, eólico, mina, industria o subestación.</li>
+          <li>Incluya tensión, potencia, marca del equipo y ubicación si la conoce.</li>
+          <li>Indique si es emergencia, mantenimiento programado o diagnóstico preventivo.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>AMEEI</strong><p>Servicios Eléctricos de Potencia, S.A. de C.V.</p></div>
+    <nav aria-label="Navegación secundaria"><a href="/">Inicio</a><a href="/servicios/">Servicios</a><a href="/sectores/">Sectores</a><a href="/proyectos/">Experiencia</a></nav>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
