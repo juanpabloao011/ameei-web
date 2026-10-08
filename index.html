@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es-MX">
   <head>
     <meta charset="utf-8">
@@ -9,8 +9,11 @@
     <meta property="og:title" content="AMEEI | Servicios eléctricos de potencia en México">
     <meta property="og:description" content="Mantenimiento, reparación, pruebas y puesta en servicio de subestaciones eléctricas para infraestructura crítica.">
     <meta property="og:type" content="website">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://ameei.com.mx">
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260714-admin-final">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/assets/css/styles.css?v=20260715-redesign">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -23,7 +26,7 @@
       </a>
       <nav class="main-nav" data-main-nav aria-label="Navegación principal"></nav>
       <div class="header-actions">
-        <a class="button button-small" href="/contacto/">Cotizar</a>
+        <a class="button-small" href="/contacto/">Cotizar</a>
         <button class="menu-button" data-menu-button aria-label="Abrir menú">
           <span></span>
           <span></span>
@@ -32,7 +35,7 @@
     </header>
 
     <main id="inicio">
-      <section class="hero section-band">
+      <section class="hero">
         <div class="hero-media" data-hero-image></div>
         <div class="hero-overlay"></div>
         <div class="hero-circuit" aria-hidden="true"></div>
@@ -43,7 +46,7 @@
             <p class="hero-description" data-hero-description></p>
             <div class="hero-actions">
               <a class="button" href="/contacto/" data-hero-primary></a>
-              <a class="button button-ghost" href="/servicios/" data-hero-secondary></a>
+              <a class="button-ghost" href="/servicios/" data-hero-secondary></a>
             </div>
           </div>
           <aside class="hero-panel reveal" aria-label="Capacidades principales">
@@ -51,10 +54,18 @@
             <ul data-hero-highlights></ul>
           </aside>
         </div>
+        <span class="scroll-cue" aria-hidden="true">Desliza</span>
       </section>
 
       <section class="stats-strip" aria-label="Indicadores">
         <div class="container stats-grid" data-stats></div>
+      </section>
+
+      <section class="logo-strip" aria-label="Empresas y proyectos">
+        <div class="container">
+          <p class="logo-strip-label">Experiencia en empresas y proyectos</p>
+          <div class="client-strip" data-clients></div>
+        </div>
       </section>
 
       <section class="section proof-section">
@@ -68,7 +79,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section about-band">
         <div class="container split-layout">
           <div>
             <p class="section-kicker">Trayectoria</p>
@@ -97,7 +108,7 @@
           </div>
           <div class="sector-grid" data-sectors></div>
           <div class="section-link-row">
-            <a class="button button-light" href="/sectores/">Ver sectores completos</a>
+            <a class="button-light" href="/sectores/">Ver sectores completos</a>
           </div>
         </div>
       </section>
@@ -126,17 +137,14 @@
         </div>
       </section>
 
-      <section class="section section-projects">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-kicker">Experiencia</p>
-            <h2>Empresas y proyectos donde AMEEI ha participado</h2>
-            <p>Experiencia con compañías nacionales e internacionales de alto nivel operativo.</p>
+      <section class="section cta-band">
+        <div class="container cta-layout">
+          <div>
+            <p class="section-kicker">Proyectos de infraestructura eléctrica</p>
+            <h2>Hablemos de su subestación, parque o proyecto eléctrico</h2>
+            <p>Mantenimiento, reparación, pruebas y puesta en servicio de equipo eléctrico industrial en México.</p>
           </div>
-          <div class="client-strip" data-clients aria-label="Clientes"></div>
-          <div class="section-link-row">
-            <a class="button button-light" href="/proyectos/">Ver proyectos</a>
-          </div>
+          <a class="button" href="/contacto/">Solicitar cotización</a>
         </div>
       </section>
 
@@ -144,8 +152,8 @@
         <div class="container contact-layout">
           <div>
             <p class="section-kicker">Contacto</p>
-            <h2>Hablemos de su subestación, parque o proyecto eléctrico</h2>
-            <p>Para mantenimiento, reparación, pruebas y puesta en servicio de equipo eléctrico industrial en México.</p>
+            <h2>Atención técnica directa con el equipo de AMEEI</h2>
+            <p>Comparta tipo de instalación, ubicación, nivel de tensión, urgencia y servicio requerido para orientar la atención con precisión.</p>
           </div>
           <div class="contact-panel">
             <div class="contact-line">
@@ -171,12 +179,19 @@
         <div>
           <strong data-footer-brand>AMEEI</strong>
           <p>Servicios Eléctricos de Potencia, S.A. de C.V.</p>
+          <p>Zacatecas 521 Sur, Col. Centro, Cd. Obregón, Sonora.</p>
         </div>
         <div>
+          <a href="/">Inicio</a>
           <a href="/servicios/">Servicios</a>
           <a href="/sectores/">Sectores</a>
+          <a href="/proyectos/">Proyectos</a>
           <a href="/contacto/">Contacto</a>
         </div>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 AMEEI Servicios Eléctricos de Potencia, S.A. de C.V.</span>
+        <span>Ciudad Obregón, Sonora · México</span>
       </div>
     </footer>
 
@@ -192,8 +207,7 @@
         "description": "Mantenimiento, reparación, pruebas y puesta en servicio de subestaciones eléctricas, transformadores y sistemas eléctricos de potencia."
       }
     </script>
-    <script src="/assets/js/content-data.js?v=20260714-admin-final"></script>
-    <script src="/assets/js/app.js?v=20260714-admin-final"></script>
+    <script src="/assets/js/content-data.js?v=20260715-redesign"></script>
+    <script src="/assets/js/app.js?v=20260715-redesign"></script>
   </body>
 </html>
-

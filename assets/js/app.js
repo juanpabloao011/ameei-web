@@ -139,15 +139,22 @@
     text("[data-services-title]", content.servicesIntro?.title);
     text("[data-services-description]", content.servicesIntro?.description);
     const serviceRoot = document.querySelector("[data-services]");
-    const visibleServices = serviceRoot?.classList.contains("service-grid-home") ? (content.services || []).slice(0, 4) : content.services;
+    const isHomeServices = serviceRoot?.classList.contains("service-grid-home");
+    const visibleServices = isHomeServices ? (content.services || []).slice(0, 4) : content.services;
     renderList("[data-services]", visibleServices, (service) => {
       const card = create("article", "service-card");
       const body = create("div");
       body.append(create("h3", "", service.title));
       body.append(create("p", "", service.description));
+      card.append(body);
       const mini = create("div", "mini-list");
       (service.items || []).forEach((item) => mini.append(create("span", "", item)));
-      card.append(body, mini);
+      card.append(mini);
+      if (isHomeServices) {
+        const more = create("a", "service-more", "Ver más");
+        more.href = "/servicios/";
+        card.append(more);
+      }
       return card;
     });
 
@@ -155,19 +162,21 @@
     text("[data-sectors-description]", content.sectorsIntro?.description);
     renderList("[data-sectors]", content.sectors, (sector) => {
       const card = create("article", "sector-card reveal");
+      const media = create("div", "sector-media");
       const image = create("img");
       image.src = sector.image || "";
       image.alt = sector.title || "Sector AMEEI";
       image.width = 640;
-      image.height = 360;
+      image.height = 480;
       safeImage(image);
+      media.append(image);
+      media.append(create("span", "sector-label", sector.title));
       const body = create("div", "sector-body");
-      body.append(create("h3", "", sector.title));
       body.append(create("p", "", sector.description));
       const tags = create("div", "mini-list");
       (sector.keywords || []).forEach((keyword) => tags.append(create("span", "", keyword)));
       body.append(tags);
-      card.append(image, body);
+      card.append(media, body);
       return card;
     });
 

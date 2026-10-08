@@ -37,7 +37,7 @@ if (!ameei_is_logged_in()) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <title>Acceso privado AMEEI</title>
-    <link rel="stylesheet" href="/assets/css/styles.css?v=20260714-admin-final2">
+    <link rel="stylesheet" href="/assets/css/admin.css?v=20260715">
   </head>
   <body class="admin-login-body">
     <main class="admin-login-card">
